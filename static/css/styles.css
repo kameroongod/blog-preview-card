@@ -1,3 +1,10 @@
+:root {
+  --yellow-color: #f4d04e;
+  --white-color: hsl(0, 0%, 100%);
+  --light-grey-color: hsl(0, 0%, 42%);
+  --dark-grey-color: hsl(0, 0%, 7%);
+}
+
 *,
 *::after,
 *::before {
@@ -8,4 +15,35 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: var(--yellow-color);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  height: 52rem;
+  width: 38.4rem;
+  background-color: var(--white-color);
+  margin: auto auto;
+  padding: 2.4rem;
+  border-radius: 2rem;
+  box-shadow: 0.8rem 0.8rem 0 0 black;
+  border: solid 0.1rem var(--dark-grey-color);
+}
+
+.card-img img {
+  border-radius: 1rem;
+}
+
+.card-img {
+  margin-bottom: 2.4rem;
 }
